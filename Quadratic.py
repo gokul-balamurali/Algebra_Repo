@@ -1,3 +1,5 @@
+import math
+
 # Example usage
 if __name__ == "__main__":
     print("Quadratic equation solver for equations in the form ax^2 + bx + c = 0")
