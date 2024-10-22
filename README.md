@@ -40,3 +40,5 @@ Enter coefficient a: 1 Enter coefficient b: 2 Enter coefficient c: 5 The solutio
 ## Contributing
 
 Feel free to open issues or submit pull requests if you'd like to improve the solver or add new features!
+We love new additions!
+ChatGPT code optional xd
