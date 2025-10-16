@@ -16,3 +16,9 @@ localtime = datetime.now(local_timezone)
 
 print("UTC Time:", utctime)
 print("Local Time:", localtime)
+
+# Added lines
+print("Your local timezone is:", local_timezone)  
+time_difference = localtime.utcoffset().total_seconds() / 3600  
+print(f"Time difference from UTC: {time_difference} hours")  
+print("Have a great day!")  
