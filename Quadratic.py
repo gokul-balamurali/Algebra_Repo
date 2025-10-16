@@ -1,16 +1,9 @@
 import math
+import time  # Added to simulate a short loading effect
 
 def solve_quadratic(a, b, c):
     """
     Solves a quadratic equation ax^2 + bx + c = 0.
-    
-    Parameters:
-    a (float): Coefficient of x^2
-    b (float): Coefficient of x
-    c (float): Constant term
-    
-    Returns:
-    tuple: Solutions of the quadratic equation, which can be real or complex.
     """
     discriminant = b**2 - 4*a*c
     
@@ -29,9 +22,6 @@ def solve_quadratic(a, b, c):
 def get_input():
     """
     Gets and validates user input for the quadratic equation coefficients.
-    
-    Returns:
-    tuple: Validated values for coefficients a, b, and c.
     """
     while True:
         try:
@@ -48,9 +38,6 @@ def get_input():
 def display_solutions(solutions):
     """
     Displays the solutions of the quadratic equation in a user-friendly manner.
-    
-    Parameters:
-    solutions (tuple): The solutions to display.
     """
     if len(solutions) == 1:
         print(f"The solution is: {solutions[0]}")
@@ -64,5 +51,9 @@ if __name__ == "__main__":
     print("Quadratic equation solver for equations in the form ax^2 + bx + c = 0")
     
     a, b, c = get_input()
+    print("\nCalculating solutions...")
+    time.sleep(1)  # Small pause to simulate processing
     solutions = solve_quadratic(a, b, c)
     display_solutions(solutions)
+
+    print("\nThanks for using the solver! :)")  # Friendly closing line
